@@ -11,6 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // definition du middleware pour parser les requetes https en json
+job.start();
 app.use(express.json());
 app.use(cors());
 
