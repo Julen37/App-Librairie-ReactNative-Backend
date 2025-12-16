@@ -62,6 +62,7 @@ router.post("/register", async (req, res) => {
                 email: user.email,
                 password: user.password,
                 profileImage: user.profileImage,
+                createdAt: user.createdAt
             },
         })
     } catch (error) {
@@ -112,6 +113,7 @@ router.post("/login", async (req, res) => {
                 username: user.username,
                 password: user.password,
                 profileImage: user.profileImage,
+                createdAt: user.createdAt
             },
         });
         
